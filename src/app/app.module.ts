@@ -1,16 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { MonPremierComponent } from './mon-premier/mon-premier.component';
+import { AppareilComponent } from './appareil/appareil.component';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MonPremierComponent
+    MonPremierComponent,
+    AppareilComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
